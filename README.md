@@ -37,7 +37,49 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Type: application/json
     Content-Length: 2
 
-       { Datos: [{ "Email": "john@gmail.com", "Nombre": "Jose Antonio", "Password": { "$binary": { "base64": "JDJiJDEyJHpsdjVpdmQwLzBKZVNRQUwwUXpKbU9kelhvZmd5aXpIMmxkRXF3Z0Q1dXpKZjdQS0Zoem82", "subType": "00" } }, "_id": { "$oid": "643180f3552b4123e73a33df" } } ] }
+{
+   "Datos":[
+      {
+         "Email":"prueba@gmail.com",
+         "Nombre":"Jhoney Testeando ",
+         "Password":{
+            "$binary":{
+               "base64":"JDJiJDEyJFhsak8uSkY3Z0M2SkhPRzJiRWd4SS5PRHlYR3dIMnIvZEFROU82WksxWjk3SXQ5NWc0VzdP",
+               "subType":"00"
+            }
+         },
+         "_id":{
+            "$oid":"64334079d17712bf3d059a6a"
+         }
+      },
+      {
+         "Email":"Carlos@gmail.com",
+         "Nombre":"Jesus carlos",
+         "Password":{
+            "$binary":{
+               "base64":"JDJiJDEyJHRrN0JVVlEwQ2liNVhuVmlMRVdQcnVoOUxLUmNWRDdJNUFUQ0JMM3NVNE93NEtRWjdzcWRt",
+               "subType":"00"
+            }
+         },
+         "_id":{
+            "$oid":"6433424ed17712bf3d059a6b"
+         }
+      },
+      {
+         "Email":"PerezTest@gmail.com",
+         "Nombre":"Andrea Perez",
+         "Password":{
+            "$binary":{
+               "base64":"JDJiJDEyJEExMHM5cUVWOS9KLnlUU0lyMGZQL3VoL25TSWVsNkJqWkx4RmlMRVl5dU1vdzVjeHZqRHZt",
+               "subType":"00"
+            }
+         },
+         "_id":{
+            "$oid":"64334269d17712bf3d059a6c"
+         }
+      }
+   ]
+}
 
 
 ## Obtener solo una lista mediante el ID
@@ -56,8 +98,21 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Type: application/json
     Content-Length: 2
 
-       { Datos: [{ "Email": "john@gmail.com", "Nombre": "Jose Antonio", "Password": { "$binary": { "base64": "JDJiJDEyJHpsdjVpdmQwLzBKZVNRQUwwUXpKbU9kelhvZmd5aXpIMmxkRXF3Z0Q1dXpKZjdQS0Zoem82", "subType": "00" } }, "_id": { "$oid": "643180f3552b4123e73a33df" } } ] }
-
+[
+   {
+      "Email":"PerezTest@gmail.com",
+      "Nombre":"Andrea Perez",
+      "Password":{
+         "$binary":{
+            "base64":"JDJiJDEyJEExMHM5cUVWOS9KLnlUU0lyMGZQL3VoL25TSWVsNkJqWkx4RmlMRVl5dU1vdzVjeHZqRHZt",
+            "subType":"00"
+         }
+      },
+      "_id":{
+         "$oid":"64334269d17712bf3d059a6c"
+      }
+   }
+]
 
 ## Crear un documento en la base de datos
 
