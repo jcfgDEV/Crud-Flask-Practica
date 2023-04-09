@@ -31,7 +31,7 @@ La API REST de la aplicación de ejemplo se describe a continuación.
 ### Response
 
     HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
+    Date: Thu, 24 Feb 2023 12:36:30 GMT
     Status: 200 OK
     Connection: close
     Content-Type: application/json
@@ -94,7 +94,7 @@ La API REST de la aplicación de ejemplo se describe a continuación.
 ### Response
 
     HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
+    Date: Thu, 24 Feb 2023 12:36:30 GMT
     Status: 200 OK
     Connection: close
     Content-Type: application/json
@@ -128,7 +128,7 @@ La API REST de la aplicación de ejemplo se describe a continuación.
 ### Response
 
     HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
+    Date: Thu, 24 Feb 2023 12:36:30 GMT
     Status: 200 OK
     Connection: close
     Content-Type: application/json
@@ -154,12 +154,10 @@ La API REST de la aplicación de ejemplo se describe a continuación.
 ### Response
 
     HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
+    Date: Thu, 12 Feb 2023 12:36:30 GMT
     Status: 200 OK
     Connection: close
     Content-Type: application/json
     Content-Length: 2
 
-    ```json
     {"mensaje": "Registro con: 643180f3552b4123e73a33df Fue eliminado"}
-    ```
