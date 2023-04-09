@@ -37,49 +37,53 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Type: application/json
     Content-Length: 2
 
-{
-   "Datos":[
-      {
-         "Email":"prueba@gmail.com",
-         "Nombre":"Jhoney Testeando ",
-         "Password":{
-            "$binary":{
-               "base64":"JDJiJDEyJFhsak8uSkY3Z0M2SkhPRzJiRWd4SS5PRHlYR3dIMnIvZEFROU82WksxWjk3SXQ5NWc0VzdP",
-               "subType":"00"
+    ```json
+
+    {
+    "Datos":[
+        {
+            "Email":"prueba@gmail.com",
+            "Nombre":"Jhoney Testeando ",
+            "Password":{
+                "$binary":{
+                "base64":"JDJiJDEyJFhsak8uSkY3Z0M2SkhPRzJiRWd4SS5PRHlYR3dIMnIvZEFROU82WksxWjk3SXQ5NWc0VzdP",
+                "subType":"00"
+                }
+            },
+            "_id":{
+                "$oid":"64334079d17712bf3d059a6a"
             }
-         },
-         "_id":{
-            "$oid":"64334079d17712bf3d059a6a"
-         }
-      },
-      {
-         "Email":"Carlos@gmail.com",
-         "Nombre":"Jesus carlos",
-         "Password":{
-            "$binary":{
-               "base64":"JDJiJDEyJHRrN0JVVlEwQ2liNVhuVmlMRVdQcnVoOUxLUmNWRDdJNUFUQ0JMM3NVNE93NEtRWjdzcWRt",
-               "subType":"00"
+        },
+        {
+            "Email":"Carlos@gmail.com",
+            "Nombre":"Jesus carlos",
+            "Password":{
+                "$binary":{
+                "base64":"JDJiJDEyJHRrN0JVVlEwQ2liNVhuVmlMRVdQcnVoOUxLUmNWRDdJNUFUQ0JMM3NVNE93NEtRWjdzcWRt",
+                "subType":"00"
+                }
+            },
+            "_id":{
+                "$oid":"6433424ed17712bf3d059a6b"
             }
-         },
-         "_id":{
-            "$oid":"6433424ed17712bf3d059a6b"
-         }
-      },
-      {
-         "Email":"PerezTest@gmail.com",
-         "Nombre":"Andrea Perez",
-         "Password":{
-            "$binary":{
-               "base64":"JDJiJDEyJEExMHM5cUVWOS9KLnlUU0lyMGZQL3VoL25TSWVsNkJqWkx4RmlMRVl5dU1vdzVjeHZqRHZt",
-               "subType":"00"
+        },
+        {
+            "Email":"PerezTest@gmail.com",
+            "Nombre":"Andrea Perez",
+            "Password":{
+                "$binary":{
+                "base64":"JDJiJDEyJEExMHM5cUVWOS9KLnlUU0lyMGZQL3VoL25TSWVsNkJqWkx4RmlMRVl5dU1vdzVjeHZqRHZt",
+                "subType":"00"
+                }
+            },
+            "_id":{
+                "$oid":"64334269d17712bf3d059a6c"
             }
-         },
-         "_id":{
-            "$oid":"64334269d17712bf3d059a6c"
-         }
-      }
-   ]
-}
+        }
+    ]
+    }
+
+    ```
 
 
 ## Obtener solo una lista mediante el ID
@@ -98,21 +102,23 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Type: application/json
     Content-Length: 2
 
-[
-   {
-      "Email":"PerezTest@gmail.com",
-      "Nombre":"Andrea Perez",
-      "Password":{
-         "$binary":{
-            "base64":"JDJiJDEyJEExMHM5cUVWOS9KLnlUU0lyMGZQL3VoL25TSWVsNkJqWkx4RmlMRVl5dU1vdzVjeHZqRHZt",
-            "subType":"00"
-         }
-      },
-      "_id":{
-         "$oid":"64334269d17712bf3d059a6c"
-      }
-   }
-]
+    ```json
+        [
+            {
+                "Email":"PerezTest@gmail.com",
+                "Nombre":"Andrea Perez",
+                "Password":{
+                    "$binary":{
+                        "base64":"JDJiJDEyJEExMHM5cUVWOS9KLnlUU0lyMGZQL3VoL25TSWVsNkJqWkx4RmlMRVl5dU1vdzVjeHZqRHZt",
+                        "subType":"00"
+                    }
+                },
+                "_id":{
+                    "$oid":"64334269d17712bf3d059a6c"
+                }
+            }
+        ]
+    ```
 
 ## Crear un documento en la base de datos
 
@@ -130,11 +136,15 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Type: application/json
     Content-Length: 2
 
+   ```json
+
     {
     "Nombre": "Jhoney Testeando ",
     "Password": "b'$2b$12$XljO.JF7gC6JHOG2bEgxI.ODyXGwH2r/dAQ9O6ZK1Z97It95g4W7O'",
     "_id": "64334079d17712bf3d059a6a"
     }
+
+   ```
 
 
 ## Eliminar un documento ingresando el ID
@@ -153,6 +163,9 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Type: application/json
     Content-Length: 2
 
+    ```json
     {
         "mensaje": "Registro con: 643180f3552b4123e73a33df Fue eliminado"
     }
+    
+    ```
