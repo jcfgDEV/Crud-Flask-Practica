@@ -1,0 +1,6 @@
+.vercel
+/static
+.env
+/requirements.txt
+/vercel.json
+/venv

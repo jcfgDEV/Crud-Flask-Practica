@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #555;
+      }
+      
+      ul {
+        font-size: 20px;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+      
+      li {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      li:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      pre {
+        background-color: #1b1b1b;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>API de práctica de un CRUD simple</h1>
+    <ul>
+      <li>https://crud-flask-clases.vercel.app/api/Buscar/{id} - Obtiene la información de un documento en específico</li>
+      <li>https://crud-flask-clases.vercel.app/api/Todo - Obtiene todos los campos</li>
+      <li>https://crud-flask-clases.vercel.app/api/Eliminar/{id} - Elimina un documento específico mediante un ID proporcionado</li>
+      <li>https://crud-flask-clases.vercel.app/api/Agregar - Agrega un documento a la BDD</li>
+    </ul>
+  </body>
+</html>
