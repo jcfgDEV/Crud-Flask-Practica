@@ -38,7 +38,6 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Length: 2
 
     ```json
-
     {
     "Datos":[
         {
@@ -82,7 +81,6 @@ La API REST de la aplicación de ejemplo se describe a continuación.
         }
     ]
     }
-
     ```
 
 
@@ -137,13 +135,11 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Length: 2
 
    ```json
-
     {
     "Nombre": "Jhoney Testeando ",
     "Password": "b'$2b$12$XljO.JF7gC6JHOG2bEgxI.ODyXGwH2r/dAQ9O6ZK1Z97It95g4W7O'",
     "_id": "64334079d17712bf3d059a6a"
     }
-
    ```
 
 
@@ -167,5 +163,4 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     {
         "mensaje": "Registro con: 643180f3552b4123e73a33df Fue eliminado"
     }
-    
     ```
