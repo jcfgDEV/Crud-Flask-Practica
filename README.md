@@ -150,6 +150,7 @@ La API REST de la aplicación de ejemplo se describe a continuación.
 `GET /api/Eliminar/{id}`
 
     curl -i -H 'Accept: application/json' http://localhost:5000/api/Eliminar/{id}
+
 ### Response
 
     HTTP/1.1 200 OK
@@ -160,7 +161,5 @@ La API REST de la aplicación de ejemplo se describe a continuación.
     Content-Length: 2
 
     ```json
-    {
-        "mensaje": "Registro con: 643180f3552b4123e73a33df Fue eliminado"
-    }
+    {"mensaje": "Registro con: 643180f3552b4123e73a33df Fue eliminado"}
     ```
